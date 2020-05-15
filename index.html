@@ -61,9 +61,50 @@
 				</thead>
 				<tbody>
 					<tr><td>--version</td>				<td>Prints the Deno version</td></tr>
-					<tr><td>--allow-read=/usr</td>		<td>Grant read permission</td></tr>
-					<tr><td>--allow-write=/usr</td>		<td>Grant write permission</td></tr>
-					<tr><td>--allow-net=deno.land</td>	<td>Grant network access</td></tr>
+					<tr><td>--allow-read</td>		<td>Grant read permission</td></tr>
+					<tr><td>--allow-write</td>		<td>Grant write permission</td></tr>
+					<tr><td>--allow-net</td>	<td>Grant network access</td></tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section>
+			<table cellspacing="0">
+				<thead>
+					<tr><th colspan="2">Environment variables</th></tr>
+				</thead>
+				<tbody>
+    				<tr><td>DENO_DIR</td>             <td>Set deno's base directory (defaults to $HOME/.deno)</td></tr>
+    				<tr><td>DENO_INSTALL_ROOT</td>    <td>Set deno install's output directory<br>
+                         								(defaults to $HOME/.deno/bin)</td></tr>
+    				<tr><td>NO_COLOR</td>             <td>Set to disable color</td></tr>
+    				<tr><td>HTTP_PROXY</td>           <td>Proxy address for HTTP requests<br>
+                         								(module downloads, fetch)</td></tr>
+    				<tr><td>HTTPS_PROXY</td>          <td>Same but for HTTPS</td></tr>
+    			</tbody>
+    		</table>
+    	</section>
+
+		<section>
+			<table cellspacing="0">
+				<thead>
+					<tr><th colspan="2">Subcommands</th></tr>
+				</thead>
+				<tbody>
+					<tr><td>bundle</td>         <td>Bundle module and dependencies into single file</td></tr>
+				    <tr><td>cache</td>          <td>Cache the dependencies</td></tr>
+				    <tr><td>completions</td>    <td>Generate shell completions</td></tr>
+				    <tr><td>doc</td>            <td>Show documentation for a module</td></tr>
+				    <tr><td>eval</td>           <td>Eval script</td></tr>
+				    <tr><td>fmt</td>            <td>Format source files</td></tr>
+				    <tr><td>help</td>           <td>Prints this message or the help of the given subcommand(s)</td></tr>
+				    <tr><td>info</td>           <td>Show info about cache or info related to source file</td></tr>
+				    <tr><td>install</td>        <td>Install script as an executable</td></tr>
+				    <tr><td>repl</td>           <td>Read Eval Print Loop</td></tr>
+				    <tr><td>run</td>            <td>Run a program given a filename or url to the module</td></tr>
+				    <tr><td>test</td>           <td>Run tests</td></tr>
+				    <tr><td>types</td>          <td>Print runtime TypeScript declarations</td></tr>
+				    <tr><td>upgrade</td>        <td>Upgrade deno executable to given version</td></tr>
 				</tbody>
 			</table>
 		</section>
@@ -99,30 +140,6 @@
 					<tr><td>ws</td>				<td></td></tr>
 					<tr><td>manual</td>			<td></td></tr>
 					<tr><td>version</td>		<td></td></tr>
-				</tbody>
-			</table>
-		</section>
-
-		<section>
-			<table cellspacing="0">
-				<thead>
-					<tr><th colspan="2">Subcommands</th></tr>
-				</thead>
-				<tbody>
-					<tr><td>bundle</td>         <td>Bundle module and dependencies into single file</td></tr>
-				    <tr><td>cache</td>          <td>Cache the dependencies</td></tr>
-				    <tr><td>completions</td>    <td>Generate shell completions</td></tr>
-				    <tr><td>doc</td>            <td>Show documentation for a module</td></tr>
-				    <tr><td>eval</td>           <td>Eval script</td></tr>
-				    <tr><td>fmt</td>            <td>Format source files</td></tr>
-				    <tr><td>help</td>           <td>Prints this message or the help of the given subcommand(s)</td></tr>
-				    <tr><td>info</td>           <td>Show info about cache or info related to source file</td></tr>
-				    <tr><td>install</td>        <td>Install script as an executable</td></tr>
-				    <tr><td>repl</td>           <td>Read Eval Print Loop</td></tr>
-				    <tr><td>run</td>            <td>Run a program given a filename or url to the module</td></tr>
-				    <tr><td>test</td>           <td>Run tests</td></tr>
-				    <tr><td>types</td>          <td>Print runtime TypeScript declarations</td></tr>
-				    <tr><td>upgrade</td>        <td>Upgrade deno executable to given version</td></tr>
 				</tbody>
 			</table>
 		</section>
