@@ -68,18 +68,25 @@
         td:last-child {
             color: grey;
         }
-        a:first-child:last-child {
+        table a:first-child:last-child {
             display: block;
         }
         a:link {
             color: #171779;
+        }
+        footer {
+            font-size: 0.8em;
+            color: #aaa;
+        }
+        footer a {
+            color: inherit;
         }
     </style>
 </head>
 <body>
     <img alt="Deno logo" src="Deno_logo.svg">
     <h1>Deno Cheat Sheet</h1>
-    <p style="margin-top: 0;"><small>May 2020, for Deno v1.0.0</small></p>
+    <p style="margin-top: 0;"><small>For <a href="https://deno.land">Deno</a> <span>v1.0.0</span></small></p>
     <main>
         <section>
             <table cellspacing="0">
@@ -192,8 +199,12 @@
                 </tbody>
             </table>
         </section>
-
+    
     </main>
+
+    <footer>
+        <p>by <span>Dane Rossenrode</span> of <a href="https://touchdreams.co.za/">Touchdreams</a></p>
+    </footer>
 </body>
 </html>
 
