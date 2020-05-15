@@ -2,37 +2,99 @@
 <html>
 <head>
 	<title>Deno Cheat Sheet</title>
+	<style type="text/css">
+		body {
+			font-family: sans-serif;
+			background: #ececec;
+			color: #3a3a3a;
+			padding: calc(10px + 2vw);
+			margin: 0;
+		}
+		h1 {
+			margin-top: 0;
+		}
+		main {
+			column-width: 300px;
+			column-gap: 2vw;
+		}
+		section {
+			background: white;
+			padding: 2px;
+			border-radius: 4px;
+		}
+		section + section {
+			margin-top: 2vw;
+		}
+		section > h2 {
+			margin-top: 0;
+		}
+		table {
+			width: 100%;
+		}
+		th,
+		td {
+		    padding: 0.2em 0.3em;
+		}
+		th {
+			background: #e9ecf2;
+			padding-top: 0.4em;
+			padding-bottom: 0.4em;
+		}
+		td:nth-child(2) {
+			color: grey;
+			font-size: 0.9em;
+		}
+	</style>
 </head>
 <body>
-	<section>
-		<h2>Standard Library</h2>
-		<table>
-			<tr><td>_util</td><td></td></tr>
-			<tr><td>archive</td><td></td></tr>
-			<tr><td>async</td><td></td></tr>
-			<tr><td>bytes</td><td></td></tr>
-			<tr><td>datetime</td><td></td></tr>
-			<tr><td>encoding</td><td></td></tr>
-			<tr><td>examples</td><td></td></tr>
-			<tr><td>flags</td><td></td></tr>
-			<tr><td>fmt</td><td></td></tr>
-			<tr><td>fs</td><td></td></tr>
-			<tr><td>hash</td><td></td></tr>
-			<tr><td>http</td><td></td></tr>
-			<tr><td>io</td><td></td></tr>
-			<tr><td>log</td><td></td></tr>
-			<tr><td>mime</td><td></td></tr>
-			<tr><td>node</td><td></td></tr>
-			<tr><td>path</td><td></td></tr>
-			<tr><td>permissions</td><td></td></tr>
-			<tr><td>signal</td><td></td></tr>
-			<tr><td>testing</td><td></td></tr>
-			<tr><td>textproto</td><td></td></tr>
-			<tr><td>uuid</td><td></td></tr>
-			<tr><td>ws</td><td></td></tr>
-			<tr><td>manual</td><td></td></tr>
-			<tr><td>version</td><td></td></tr>
-		</table>
-	</section>
+	<h1>Deno Cheat Sheet</h1>
+	<main>
+		<section>
+			<table cellspacing="0">
+				<thead>
+					<tr><th colspan="2">Flags</th></tr>
+				</thead>
+				<tr><td>--version</td><td>Prints the Deno version</td></tr>
+				<tr><td>--allow-read=/usr</td><td>Grant read permission</td></tr>
+				<tr><td>--allow-write=/usr</td><td>Grant write permission</td></tr>
+				<tr><td>--allow-net=deno.land</td><td>Grant network access</td></tr>
+			</table>
+		</section>
+
+		<section>
+			<table cellspacing="0">
+				<thead>
+					<tr><th colspan="2">Standard Library</th></tr>
+				</thead>
+				<tr><td>_util</td><td></td></tr>
+				<tr><td>archive</td><td></td></tr>
+				<tr><td>async</td><td></td></tr>
+				<tr><td>bytes</td><td></td></tr>
+				<tr><td>datetime</td><td></td></tr>
+				<tr><td>encoding</td><td></td></tr>
+				<tr><td>examples</td><td></td></tr>
+				<tr><td>flags</td><td></td></tr>
+				<tr><td>fmt</td><td></td></tr>
+				<tr><td>fs</td><td></td></tr>
+				<tr><td>hash</td><td></td></tr>
+				<tr><td>http</td><td></td></tr>
+				<tr><td>io</td><td></td></tr>
+				<tr><td>log</td><td></td></tr>
+				<tr><td>mime</td><td></td></tr>
+				<tr><td>node</td><td></td></tr>
+				<tr><td>path</td><td></td></tr>
+				<tr><td>permissions</td><td></td></tr>
+				<tr><td>signal</td><td></td></tr>
+				<tr><td>testing</td><td></td></tr>
+				<tr><td>textproto</td><td></td></tr>
+				<tr><td>uuid</td><td></td></tr>
+				<tr><td>ws</td><td></td></tr>
+				<tr><td>manual</td><td></td></tr>
+				<tr><td>version</td><td></td></tr>
+			</table>
+		</section>
+	</main>
 </body>
 </html>
+
+<table class="min-w-full table-fixed"><tbody class="bg-white">
