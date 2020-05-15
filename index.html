@@ -28,6 +28,7 @@
             background: white;
             border: solid 1px #d9d9d9;
             padding: 0;
+            padding-bottom: 4px;
             border-radius: 4px;
         }
         section + section {
@@ -39,6 +40,12 @@
         table {
             width: 100%;
         }
+        tr > :first-child {
+            padding-left: 0.6em;
+        }
+        tr > :last-child {
+            padding-right: 0.6em;
+        }
         th,
         td {
             padding: 0.2em 0.3em;
@@ -47,7 +54,8 @@
             background: #f1f2f5;
         }
         thead th {
-            background: #e1e3e8;
+            background: #37383a;
+            color: white;
             padding-top: 0.4em;
             padding-bottom: 0.4em;
             border-top-left-radius: 4px;
@@ -59,6 +67,12 @@
         }
         td:last-child {
             color: grey;
+        }
+        a:first-child:last-child {
+            display: block;
+        }
+        a:link {
+            color: #171779;
         }
     </style>
 </head>
@@ -150,31 +164,31 @@
                     <tr><th colspan="2">Standard Library</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>_util</td>          <td></td></tr>
-                    <tr><td>archive</td>        <td></td></tr>
-                    <tr><td>async</td>          <td></td></tr>
-                    <tr><td>bytes</td>          <td></td></tr>
-                    <tr><td>datetime</td>       <td></td></tr>
-                    <tr><td>encoding</td>       <td></td></tr>
-                    <tr><td>examples</td>       <td></td></tr>
-                    <tr><td>flags</td>          <td></td></tr>
-                    <tr><td>fmt</td>            <td></td></tr>
-                    <tr><td>fs</td>             <td></td></tr>
-                    <tr><td>hash</td>           <td></td></tr>
-                    <tr><td>http</td>           <td></td></tr>
-                    <tr><td>io</td>             <td></td></tr>
-                    <tr><td>log</td>            <td></td></tr>
-                    <tr><td>mime</td>           <td></td></tr>
-                    <tr><td>node</td>           <td></td></tr>
-                    <tr><td>path</td>           <td></td></tr>
-                    <tr><td>permissions</td>    <td></td></tr>
-                    <tr><td>signal</td>         <td></td></tr>
-                    <tr><td>testing</td>        <td></td></tr>
-                    <tr><td>textproto</td>      <td></td></tr>
-                    <tr><td>uuid</td>           <td></td></tr>
-                    <tr><td>ws</td>             <td></td></tr>
-                    <tr><td>manual</td>         <td></td></tr>
-                    <tr><td>version</td>        <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/_util">_util</a></td>        <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/archive">archive</a></td>    <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/async">async</a></td>        <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/bytes">bytes</a></td>        <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/datetime">datetime</a></td>  <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/encoding">encoding</td>      <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/examples">examples</td>      <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/flags">flags</td>            <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/fmt">fmt</td>                <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/fs">fs</td>                  <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/hash">hash</td>              <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/http">http</td>              <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/io">io</td>                  <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/log">log</td>                <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/mime">mime</td>              <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/node">node</td>              <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/path">path</td>              <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/permissions">permissions</td><td></td></tr>
+                    <tr><td><a href="https://deno.land/std/signal">signal</td>          <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/testing">testing</td>        <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/textproto">textproto</td>    <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/uuid">uuid</td>              <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/ws">ws</td>                  <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/manual">manual</td>          <td></td></tr>
+                    <tr><td><a href="https://deno.land/std/version">version</td>        <td></td></tr>
                 </tbody>
             </table>
         </section>
