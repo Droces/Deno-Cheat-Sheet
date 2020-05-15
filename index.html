@@ -10,15 +10,23 @@
             padding: calc(10px + 2vw);
             margin: 0;
         }
+        img[alt*="logo"] {
+            float: left;
+            width: 60px;
+            margin-right: 20px;
+        }
         h1 {
             margin-top: 0;
+            margin-bottom: 0.1em;
         }
         main {
+            clear: both;
             column-width: 300px;
             column-gap: 2vw;
         }
         section {
             background: white;
+            border: solid 1px #d9d9d9;
             padding: 0;
             border-radius: 4px;
         }
@@ -55,7 +63,9 @@
     </style>
 </head>
 <body>
+    <img alt="Deno logo" src="Deno_logo.svg">
     <h1>Deno Cheat Sheet</h1>
+    <p style="margin-top: 0;"><small>May 2020, for Deno v1.0.0</small></p>
     <main>
         <section>
             <table cellspacing="0">
