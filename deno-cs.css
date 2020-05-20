@@ -5,6 +5,14 @@ body {
     padding: calc(10px + 2vw);
     margin: 0;
 }
+accr {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    font-weight: normal;
+}
+accr::after {
+    content: ":";
+}
 img[alt*="logo"] {
     float: left;
     width: 60px;
@@ -20,6 +28,11 @@ main {
     column-gap: 2vw;
 }
 section {
+    -webkit-column-break-inside: avoid;
+       -moz-column-break-inside: avoid;
+         -o-column-break-inside: avoid;
+        -ms-column-break-inside: avoid;
+            column-break-inside: avoid;
     background: white;
     border: solid 1px #d9d9d9;
     padding: 0;
@@ -47,6 +60,25 @@ td {
 }
 th {
     background: #f1f2f5;
+}
+th a:link,
+th a:visited,
+th a:hover,
+th a:focus {
+    color: inherit;
+}
+th accr {
+    text-decoration: none;
+    font-weight: inherit;
+    font-size: 0.7em;
+    border: solid 1px #ffffff50;
+    border-radius: 3px;
+    padding: 0.2em 0.5em;
+    vertical-align: middle;
+    display: inline-block;
+}
+th accr::after {
+    content: "";
 }
 thead th {
     background: #37383a;
