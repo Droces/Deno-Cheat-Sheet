@@ -162,7 +162,7 @@
                 <thead>
                     <tr><th colspan="2">
                         <accr title="Part of Deno's standard library">SL</accr>
-                        <a href="https://deno.land/std/fs">fs</a></th></tr>
+                        <a href="https://deno.land/std/fs" title="File System">fs</a></th></tr>
                 </thead>
                 <tbody>
                     <tr><td>emptyDir</td>           <td>Ensures that a directory is empty</td></tr>
@@ -263,6 +263,44 @@
                     <tr><td>hasPrefix()</td>            <td>Check whether binary array has binary prefix</td></tr>
                     <tr><td>repeat()</td>               <td>Repeat bytes of given binary array and return new one</td></tr>
                     <tr><td>concat()</td>               <td>Concatenate two binary arrays and return new one</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <table cellspacing="0">
+                <thead>
+                    <tr><th colspan="2">
+                        <accr title="Part of Deno's standard library">SL</accr>
+                        <a href="https://deno.land/std/uuid" title="Universally Unique ID">uuid</a></th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>v4.generate()</td>            <td></td></tr>
+                    <tr><td>v4.validate()</td>            <td></td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <table cellspacing="0">
+                <thead>
+                    <tr><th colspan="2">
+                        <accr title="Part of Deno's standard library">SL</accr>
+                        <a href="https://deno.land/std/ws" title="Web Socket">ws</a></th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>isWebSocketCloseEvent()</td>      <td>Returns true if input value is a WebSocketCloseEvent, false otherwise</td></tr>
+                    <tr><td>isWebSocketPingEvent()</td>       <td>Returns true if input value is a WebSocketPingEvent, false otherwise</td></tr>
+                    <tr><td>isWebSocketPongEvent()</td>       <td>Returns true if input value is a WebSocketPongEvent, false otherwise</td></tr>
+                    <tr><td>unmask()</td>                     <td>Unmask masked WebSocket payload</td></tr>
+                    <tr><td>writeFrame()</td>                 <td>Write WebSocket frame to inputted writer</td></tr>
+                    <tr><td>readFrame()</td>                  <td>Read WebSocket frame from inputted BufReader</td></tr>
+                    <tr><td>createMask()</td>                 <td>Create mask from the client to the server with random 32bit number</td></tr>
+                    <tr><td>acceptable</td>                 <td>Returns true if input headers are usable for WebSocket, otherwise false</td></tr>
+                    <tr><td>createSecAccept()</td>            <td>Create value of Sec-WebSocket-Accept header from inputted nonce</td></tr>
+                    <tr><td>acceptWebSocket()</td>            <td>Upgrade inputted TCP connection into WebSocket connection</td></tr>
+                    <tr><td>createSecKey()</td>               <td>Returns base64 encoded 16 bytes string for Sec-WebSocket-Key header</td></tr>
+                    <tr><td>connectWebSocket()</td>           <td>Connect to WebSocket endpoint url with inputted endpoint string and headers</td></tr>
                 </tbody>
             </table>
         </section>
