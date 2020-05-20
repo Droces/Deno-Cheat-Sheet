@@ -217,6 +217,38 @@
             </table>
         </section>
 
+        <section>
+            <table cellspacing="0">
+                <thead>
+                    <tr><th colspan="2">
+                        <accr title="Part of Deno's standard library">SL</accr>
+                        <a href="https://deno.land/std/testing">testing</a></th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>equal()</td>                <td>Deep comparison; actual and expected are compared deeply</td></tr>
+                    <tr><td>assert()</td>               <td>Expects a boolean value; throws if the value is false</td></tr>
+                    <tr><td>assertEquals()</td>         <td>Uses equal comparison; throws if actual !== expected</td></tr>
+                    <tr><td>assertNotEquals()</td>      <td>Uses equal comparison; throws if actual === expected</td></tr>
+                    <tr><td>assertStrictEq()</td>       <td>Compares actual and expected strictly</td></tr>
+                    <tr><td>assertStrContains()</td>    <td>Make assertion: actual contains expected</td></tr>
+                    <tr><td>assertMatch()</td>          <td>Make assertion: actual match RegExp expected</td></tr>
+                    <tr><td>assertArrayContains()</td>  <td>Make assertion: actual array contains the expected values</td></tr>
+                    <tr><td>assertThrows()</td>         <td>Expects passed fn to throw. If fn does not, this function does</td></tr>
+                    <tr><td>assertThrowsAsync()</td>    <td>Expects passed fn to be async and throw (or return a Promise that rejects)</td></tr>
+                    <tr><td>unimplemented()</td>        <td>Use this to stub out methods that will throw when invoked</td></tr>
+                    <tr><td>unreachable()</td>          <td>Used to assert unreachable code</td></tr>
+                    <tr><th colspan="2">Benchmarking</th></tr>
+                    <tr><td>bench()</td>                <td>Registers a benchmark that will be run once runBenchmarks is called</td></tr>
+                    <tr><td>runBenchmarks()</td>        <td>Runs all registered benchmarks serially</td></tr>
+                    <tr><td>runIfMain()</td>            <td>Runs specified benchmarks if the enclosing script is main</td></tr>
+                    <tr><td><accr title="interface">i</accr> BenchmarkTimer</td>         <td>Provides methods for starting and stopping a benchmark clock</td></tr>
+                    <tr><td><accr title="interface">i</accr> BenchmarkFunction</td>      <td>Defines a benchmark through a named function</td></tr>
+                    <tr><td><accr title="interface">i</accr> BenchmarkDefinition</td>    <td>Defines a benchmark definition with configurable runs</td></tr>
+                    <tr><td><accr title="interface">i</accr> BenchmarkRunOptions</td>    <td>Defines runBenchmark's run constraints by matching benchmark names</td></tr>
+                </tbody>
+            </table>
+        </section>
+
     
     </main>
 

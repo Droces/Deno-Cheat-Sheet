@@ -67,18 +67,21 @@ th a:hover,
 th a:focus {
     color: inherit;
 }
-th accr {
+table accr {
     text-decoration: none;
     font-weight: inherit;
-    font-size: 0.7em;
-    border: solid 1px #ffffff50;
+    border: solid 1px #00000050;
     border-radius: 3px;
     padding: 0.2em 0.5em;
     vertical-align: middle;
     display: inline-block;
 }
-th accr::after {
+table accr::after {
     content: "";
+}
+th accr {
+    font-size: 0.7em;
+    border-color: #ffffff50;
 }
 thead th {
     background: #37383a;
