@@ -71,6 +71,11 @@ accr {
 accr::after {
     content: ":";
 }
+mark {
+    background: #74ddff4f;
+    padding: 0em 0.3em;
+    border-radius: 2px;
+}
 img[alt*="logo"] {
     float: left;
     width: 60px;
