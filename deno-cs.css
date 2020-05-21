@@ -2,25 +2,43 @@ body {
     font-family: sans-serif;
     background: #f5f5f5;
     color: #3a3a3a;
-    padding: calc(10px + 2vw);
+    /*padding: 0;*/
     margin: 0;
 }
-accr {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    font-weight: normal;
+nav,
+main,
+header,
+footer {
+    padding-left: calc(10px + 2vw);
+    padding-right: calc(10px + 2vw);
 }
-accr::after {
-    content: ":";
+nav {
+    background: #0000000a;
 }
-img[alt*="logo"] {
-    float: left;
-    width: 60px;
-    margin-right: 20px;
+nav a {
+    text-decoration: none;
+    padding: 0.4em 0.7em;
+    display: inline-block;
+    font-size: 0.8em;
+    color: inherit;
+    font-weight: 600;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: transparent;
 }
-h1 {
-    margin-top: 0;
-    margin-bottom: 0.1em;
+nav a[aria-selected="true"] {
+    border-bottom-color: #21219b;
+}
+nav a:hover,
+nav a:focus {
+    border-bottom-color: blue;
+}
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+header p {
+    margin-bottom: 0;
 }
 main {
     clear: both;
@@ -44,6 +62,23 @@ section + section {
 }
 section > h2 {
     margin-top: 0;
+}
+accr {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    font-weight: normal;
+}
+accr::after {
+    content: ":";
+}
+img[alt*="logo"] {
+    float: left;
+    width: 60px;
+    margin-right: 20px;
+}
+h1 {
+    margin-top: 0;
+    margin-bottom: 0.1em;
 }
 table {
     width: 100%;
