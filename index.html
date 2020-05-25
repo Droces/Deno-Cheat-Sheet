@@ -20,6 +20,31 @@
     </header>
 
     <main>
+
+        <section>
+            <table cellspacing="0">
+                <thead>
+                    <tr><th colspan="2">Subcommands</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>bundle</td>         <td>Bundle module and dependencies into single file</td></tr>
+                    <tr><td>cache</td>          <td>Cache the dependencies</td></tr>
+                    <tr><td>completions</td>    <td>Generate shell completions</td></tr>
+                    <tr><td>doc</td>            <td>Show documentation for a module</td></tr>
+                    <tr><td>eval</td>           <td>Eval script</td></tr>
+                    <tr><td>fmt</td>            <td>Format source files</td></tr>
+                    <tr><td>help</td>           <td>Prints this message or the help of the given subcommand(s)</td></tr>
+                    <tr><td>info</td>           <td>Show info about cache or info related to source file</td></tr>
+                    <tr><td>install</td>        <td>Install script as an executable</td></tr>
+                    <tr><td>repl</td>           <td>Read Eval Print Loop</td></tr>
+                    <tr><td>run</td>            <td>Run a program given a filename or url to the module</td></tr>
+                    <tr><td>test</td>           <td>Run tests</td></tr>
+                    <tr><td>types</td>          <td>Print runtime TypeScript declarations</td></tr>
+                    <tr><td>upgrade</td>        <td>Upgrade deno executable to given version</td></tr>
+                </tbody>
+            </table>
+        </section>
+
         <section>
             <table cellspacing="0">
                 <thead>
@@ -76,23 +101,91 @@
         <section>
             <table cellspacing="0">
                 <thead>
-                    <tr><th colspan="2">Subcommands</th></tr>
+                    <tr><th colspan="2">Functions</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>bundle</td>         <td>Bundle module and dependencies into single file</td></tr>
-                    <tr><td>cache</td>          <td>Cache the dependencies</td></tr>
-                    <tr><td>completions</td>    <td>Generate shell completions</td></tr>
-                    <tr><td>doc</td>            <td>Show documentation for a module</td></tr>
-                    <tr><td>eval</td>           <td>Eval script</td></tr>
-                    <tr><td>fmt</td>            <td>Format source files</td></tr>
-                    <tr><td>help</td>           <td>Prints this message or the help of the given subcommand(s)</td></tr>
-                    <tr><td>info</td>           <td>Show info about cache or info related to source file</td></tr>
-                    <tr><td>install</td>        <td>Install script as an executable</td></tr>
-                    <tr><td>repl</td>           <td>Read Eval Print Loop</td></tr>
-                    <tr><td>run</td>            <td>Run a program given a filename or url to the module</td></tr>
-                    <tr><td>test</td>           <td>Run tests</td></tr>
-                    <tr><td>types</td>          <td>Print runtime TypeScript declarations</td></tr>
-                    <tr><td>upgrade</td>        <td>Upgrade deno executable to given version</td></tr>
+                    <tr><td>Deno.chdir</td>             <td>Change the current working directory to the specified path</td></tr>
+                    <tr><td>Deno.chmod</td>             <td>Changes the permission of a specific file / directory of specified path.</td></tr>
+                    <tr><td>Deno.chmodSync</td>         <td></td></tr>
+                    <tr><td>Deno.chown</td>             <td></td></tr>
+                    <tr><td>Deno.chownSync</td>         <td></td></tr>
+                    <tr><td>Deno.close</td>             <td></td></tr>
+                    <tr><td>Deno.connect</td>           <td></td></tr>
+                    <tr><td>Deno.connectTls</td>        <td></td></tr>
+                    <tr><td>Deno.copy</td>              <td></td></tr>
+                    <tr><td>Deno.copyFile</td>          <td></td></tr>
+                    <tr><td>Deno.copyFileSync</td>      <td></td></tr>
+                    <tr><td>Deno.create</td>            <td></td></tr>
+                    <tr><td>Deno.createSync</td>        <td></td></tr>
+                    <tr><td>Deno.cwd</td>               <td></td></tr>
+                    <tr><td>Deno.execPath</td>          <td></td></tr>
+                    <tr><td>Deno.exit</td>              <td></td></tr>
+                    <tr><td>Deno.inspect</td>           <td></td></tr>
+                    <tr><td>Deno.isatty</td>            <td></td></tr>
+                    <tr><td>Deno.iter</td>              <td></td></tr>
+                    <tr><td>Deno.iterSync</td>          <td></td></tr>
+                    <tr><td>Deno.listen</td>            <td></td></tr>
+                    <tr><td>Deno.listenTls</td>         <td></td></tr>
+                    <tr><td>Deno.lstat</td>             <td></td></tr>
+                    <tr><td>Deno.lstatSync</td>         <td></td></tr>
+                    <tr><td>Deno.makeTempDir</td>       <td></td></tr>
+                    <tr><td>Deno.makeTempDirSync</td>   <td></td></tr>
+                    <tr><td>Deno.makeTempFile</td>      <td></td></tr>
+                    <tr><td>Deno.makeTempFileSync</td>  <td></td></tr>
+                    <tr><td>Deno.metrics</td>           <td></td></tr>
+                    <tr><td>Deno.mkdir</td>             <td></td></tr>
+                    <tr><td>Deno.mkdirSync</td>         <td></td></tr>
+                    <tr><td>Deno.open</td>              <td></td></tr>
+                    <tr><td>Deno.openSync</td>          <td></td></tr>
+                    <tr><td>Deno.read</td>              <td></td></tr>
+                    <tr><td>Deno.readAll</td>           <td></td></tr>
+                    <tr><td>Deno.readAllSync</td>       <td></td></tr>
+                    <tr><td>Deno.readDir</td>           <td></td></tr>
+                    <tr><td>Deno.readDirSync</td>       <td></td></tr>
+                    <tr><td>Deno.readFile</td>          <td></td></tr>
+                    <tr><td>Deno.readFileSync</td>      <td></td></tr>
+                    <tr><td>Deno.readLink</td>          <td></td></tr>
+                    <tr><td>Deno.readLinkSync</td>      <td></td></tr>
+                    <tr><td>Deno.readSync</td>          <td></td></tr>
+                    <tr><td>Deno.readTextFile</td>      <td></td></tr>
+                    <tr><td>Deno.readTextFileSync</td>  <td></td></tr>
+                    <tr><td>Deno.realPath</td>          <td></td></tr>
+                    <tr><td>Deno.realPathSync</td>      <td></td></tr>
+                    <tr><td>Deno.remove</td>            <td></td></tr>
+                    <tr><td>Deno.removeSync</td>        <td></td></tr>
+                    <tr><td>Deno.rename</td>            <td></td></tr>
+                    <tr><td>Deno.renameSync</td>        <td></td></tr>
+                    <tr><td>Deno.resources</td>         <td></td></tr>
+                    <tr><td>Deno.run</td>               <td></td></tr>
+                    <tr><td>Deno.seek</td>              <td></td></tr>
+                    <tr><td>Deno.seekSync</td>          <td></td></tr>
+                    <tr><td>Deno.stat</td>              <td></td></tr>
+                    <tr><td>Deno.statSync</td>          <td></td></tr>
+                    <tr><td>Deno.test</td>              <td></td></tr>
+                    <tr><td>Deno.test</td>              <td></td></tr>
+                    <tr><td>Deno.truncate</td>          <td></td></tr>
+                    <tr><td>Deno.truncateSync</td>      <td></td></tr>
+                    <tr><td>Deno.watchFs</td>           <td></td></tr>
+                    <tr><td>Deno.write</td>             <td></td></tr>
+                    <tr><td>Deno.writeAll</td>          <td></td></tr>
+                    <tr><td>Deno.writeAllSync</td>      <td></td></tr>
+                    <tr><td>Deno.writeFile</td>         <td></td></tr>
+                    <tr><td>Deno.writeFileSync</td>     <td></td></tr>
+                    <tr><td>Deno.writeSync</td>         <td></td></tr>
+                    <tr><td>Deno.writeTextFile</td>     <td></td></tr>
+                    <tr><td>Deno.writeTextFileSync</td> <td></td></tr>
+                    <tr><td>addEventListener</td>       <td></td></tr>
+                    <tr><td>atob</td>                   <td></td></tr>
+                    <tr><td>btoa</td>                   <td></td></tr>
+                    <tr><td>clearInterval</td>          <td></td></tr>
+                    <tr><td>clearTimeout</td>           <td></td></tr>
+                    <tr><td>dispatchEvent</td>          <td></td></tr>
+                    <tr><td>fetch</td>                  <td></td></tr>
+                    <tr><td>performance.now</td>        <td></td></tr>
+                    <tr><td>queueMicrotask</td>         <td></td></tr>
+                    <tr><td>removeEventListener</td>    <td></td></tr>
+                    <tr><td>setInterval</td>            <td></td></tr>
+                    <tr><td>setTimeout</p></</td>       <td></td></tr>
                 </tbody>
             </table>
         </section>
@@ -290,6 +383,7 @@
                     <tr><td>findLastIndex()</td>        <td>Find last index of binary pattern from given binary array</td></tr>
                     <tr><td>equal()</td>                <td>Check whether given binary arrays are equal to each other</td></tr>
                     <tr><td>hasPrefix()</td>            <td>Check whether binary array has binary prefix</td></tr>
+                    <tr><td>hasSuffix()</td>            <td>Check whether binary array has binary suffix</td></tr>
                     <tr><td>repeat()</td>               <td>Repeat bytes of given binary array and return new one</td></tr>
                     <tr><td>concat()</td>               <td>Concatenate two binary arrays and return new one</td></tr>
                 </tbody>
@@ -333,7 +427,6 @@
                 </tbody>
             </table>
         </section>
-
     
     </main>
 
